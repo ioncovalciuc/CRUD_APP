@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: ionk2
+Build-Jdk: Oracle OpenJDK version 22.0.1
+Implementation-Title: CRUD_APP
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.person
+Main-Class: ${start-class}
+

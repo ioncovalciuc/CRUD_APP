@@ -12,9 +12,9 @@ public class TestAddConnection {
                 .addAnnotatedClass(Client.class)
                 .buildSessionFactory()) {
             try (Session session = factory.getCurrentSession()) {
-                Client client1 = new Client("Covalciuc Ion", "covalciuc@gmail.com", "+37368882480");
+                Client client1 = new Client("Manea Inga", "covalciuc@gmail.com", "+37368882480");
                 session.beginTransaction();
-                session.save(client1);
+                session.persist(client1);
                 session.getTransaction().commit();
             }
         }

@@ -34,12 +34,9 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<!-- Hibernate Core -->
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>5.6.7.Final</version> <!-- Sau orice altă versiune stabilă -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
 		</dependency>
 
 		<!-- MySQL Connector -->
@@ -53,12 +50,12 @@
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
-			<version>2.3.3</version> <!-- Sau orice altă versiune stabilă -->
+			<version>4.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.glassfish.jaxb</groupId>
 			<artifactId>jaxb-runtime</artifactId>
-			<version>2.3.3</version> <!-- Sau orice altă versiune stabilă -->
+			<version>4.0.2</version> <!-- Sau orice altă versiune stabilă -->
 		</dependency>
 
 		<!-- Spring Boot Devtools -->
@@ -67,13 +64,6 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-
-		<!-- MySQL Connector -->
-		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 
 		<!-- Spring Boot Configuration Processor -->
@@ -102,12 +92,29 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.2.0</version>
+		</dependency>
 
-		<!-- Update protobuf-java to fix vulnerabilities -->
+		<!-- Protobuf Java -->
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java</artifactId>
-			<version>3.21.12</version> <!-- Versiune actualizată -->
+			<version>4.27.2</version>
+		</dependency>
+
+		<!-- Jakarta EE Web API -->
+		<dependency>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-web-api</artifactId>
+			<version>9.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.person</groupId>
+			<artifactId>CRUD_APP</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>

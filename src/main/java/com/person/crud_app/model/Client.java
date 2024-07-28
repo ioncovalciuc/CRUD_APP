@@ -1,14 +1,12 @@
 package com.person.crud_app.model;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
+
 import jakarta.persistence.*;
-import java.util.Objects;
 
 @Entity
 @Table(name = "client")
 final public class Client {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -35,13 +33,7 @@ final public class Client {
 
 
     // Getters and Setters
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -66,4 +58,6 @@ final public class Client {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
 }
